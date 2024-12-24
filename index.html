@@ -29,6 +29,9 @@
             <a href="#projects" class="nav__link">Projects</a>
           </li>
           <li class="nav__item">
+            <a href="#mini-projects" class="nav__link">Mini-projects</a>
+          </li>
+          <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
           <li class="nav__item">
@@ -63,9 +66,9 @@
             <!-- Replace the below paragraph with info about yourself -->
             <p>
             Full-stack developer driven by a passion for logical reasoning and problem-solving. <br>
-            Proficient in Java, JavaScript, PHP, C#, SQL, HTML, CSS, and experienced with libraries and frameworks such as Spring Boot, React.js, Node.js, Express.js, and .NET. <br>
+            Proficient in Java, JavaScript, PHP, C#, SQL, HTML, CSS, and experienced with libraries and frameworks such as Spring Boot, React.js, Node.js, Express.js, WPF, and ASP.NET Core. <br>
             After starting my journey with self-learning and gaining initial work experience, I joined the Full-stack Development Program at John Abbott College in Montreal. <br>
-            Looking for an internship or a full-time position starting in February 2025.
+            Looking for a full-time position starting in April 2025.
             </p>
             <!-- Provide a link to your resume -->
             <a href="files/Resume_Amine_Mankai.pdf" class="btn">My Resume</a>
@@ -91,7 +94,9 @@
             <div class="work__text">
               <h3>Twixer</h3>
               <p>
-                Web app inspired by Twitter/X.
+                Web app inspired by Twitter/X.<br/>
+                Features include user authentication, the ability to create, edit, and delete posts, as well as like, comment and repost others' posts. 
+                Users can also follow other users. 
               </p>
               <ul class="work__list">
                 <li>Node.js</li>
@@ -106,7 +111,7 @@
 
               <div class="work__links">
                 <a href="https://twixer-client-7fc12e0d4cd5.herokuapp.com/" target="_blank" class="link__text">
-                  Visit Website <span>&rarr;</span>
+                  Visit Website <span></span>
                 </a>
                 <a href="https://github.com/mankai-amine/twixer-client" title="Twixer" target="_blank">
                   <img src="./images/github.svg" class="work__code" alt="View Source Code">
@@ -122,8 +127,8 @@
             <div class="work__text">
               <h3>ShopTillYouDrop</h3>
               <p>
-              Web app for a marketplace. <br/> It allows buyers to browse products, checkout, and view their orders. 
-              It also allows to sellers to create, update and delete listings, and view their sales.
+              Web app for a marketplace. <br/> Buyers can browse products, complete purchases through a checkout process, and track their orders. <br/>
+              Sellers can manage listings by creating, updating, or deleting products and monitor their sales performance.
               </p>
               <ul class="work__list">
                 <li>Spring Boot</li>
@@ -137,9 +142,9 @@
 
               <div class="work__links">
                 <a href="https://shoptillyoudrop-e858ff7b6c4f.herokuapp.com" class="link__text">
-                  Visit Website <span>&rarr;</span>
+                  Visit Website <span></span>
                 </a>
-                <a href="https://github.com/mankai-amine/marketplace">
+                <a href="https://github.com/mankai-amine/NextStop">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
               </div>
@@ -151,10 +156,83 @@
 
           <div class="work__box">
             <div class="work__text">
+              <h3>NextStop</h3>
+              <p>
+              Web app for a Bus Ticketing System. <br/> 
+              Users can search for trips, purchase tickets, and view their orders.<br/>
+              Admins can manage the system by creating and modifying buses and trips.
+              </p>
+              <ul class="work__list">
+                <li>ASP.NET Core</li>
+                <li>Razor Pages</li>
+                <li>Entity Framework Core</li>
+                <li>HTML</li>
+                <li>Bootstrap</li>
+                <li>Azure Blob Storage</li>
+                <li>Azure SQL Database</li>
+                <li>Azure App Service</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://nextstop-baatfxcxefcahqdh.eastus2-01.azurewebsites.net/" class="link__text">
+                  Visit Website <span></span>
+                </a>
+                <a href="https://github.com/mankai-amine/marketplace">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/bus.jpg" class="work__image" alt="Marketplace" height="600px"/>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ***** Projects ***** -->
+
+    <section class="work" id="mini-projects">
+      <div class="row">
+        <h2>Mini-projects</h2>
+        <div class="work__boxes">
+          <!-- Each div with the work__box class is a project. -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Youtube Digest</h3>
+              <p>
+              An AI-powered tool for summarizing and saving my favorite YouTube videos. <br/>
+              It uses Python's YoutubeTranscriptApi library to fetch captions, and OpenAI's GPT to generate concise summaries of the text.
+              </p>
+              <ul class="work__list">
+                <li>Flask</li>
+                <li>SQLAlchemy</li> 
+                <li>MySQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/mankai-amine/youtube-digest">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/youtube.jpg" class="work__image" alt="Book finder" height="350px" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
               <h3>Book Finder</h3>
               <p>
-              The app uses Google Books API to allow users to search for books by title. <br/>
-              It displays the following information: Cover image, Title, Author(s), Publisher, Link to more information.
+              The app uses Google Books API to enable users to search for books by title. <br/>
+              It displays key information including the cover image, title, author(s), publisher, and a link to additional details.
               </p>
               <ul class="work__list">
                 <li>React</li>
@@ -163,7 +241,7 @@
 
               <div class="work__links">
                 <a href="https://deluxe-licorice-129b3f.netlify.app/ " class="link__text">
-                  Visit Website <span>&rarr;</span>
+                  Visit Website <span></span>
                 </a>
                 <a href="https://github.com/mankai-amine/book-finder">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
@@ -179,7 +257,7 @@
             <div class="work__text">
               <h3>2048</h3>
               <p>
-              A sliding puzzle game where the objective is to combine numbered tiles to create a tile with the number 2048.
+              A sliding puzzle game where the objective is to combine numbered tiles to form a tile with the number 2048.
               </p>
               <ul class="work__list">
                 <li>jQuery</li>
@@ -189,7 +267,7 @@
 
               <div class="work__links">
                 <a href="https://2048-game-tiles.netlify.app " class="link__text">
-                  Visit Website <span>&rarr;</span>
+                  Visit Website <span></span>
                 </a>
                 <a href="https://github.com/mankai-amine/2048">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
@@ -200,8 +278,6 @@
               <img src="./images/2048.png" class="work__image" alt="2048" height="350px" />
             </div>
           </div>
-
-
         </div>
       </div>
     </section>
