@@ -26,29 +26,31 @@
       <nav class="nav" role="navigation">
         <ul class="nav__items">
           <li class="nav__item">
-            <a href="#projects" class="nav__link">Projects</a>
+            <a href="#projects" class="nav__link" data-i18n="nav_projects">Projects</a>
           </li>
           <li class="nav__item">
-            <a href="#mini-projects" class="nav__link">Mini-projects</a>
+            <a href="#mini-projects" class="nav__link" data-i18n="nav_miniprojects">Mini-projects</a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+            <a href="#about" class="nav__link" data-i18n="nav_about">About</a>
           </li>
           <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+            <a href="#contact" class="nav__link" data-i18n="nav_contact">Contact</a>
           </li>
         </ul>
+        <div class="lang-toggle">
+          <button id="btn-en" class="lang-btn" aria-label="English">EN</button>
+          <button id="btn-fr" class="lang-btn" aria-label="Français">FR</button>
+        </div>
       </nav>
     </div>
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Amine Mankai</span>
+          <span data-i18n="header_name">Amine Mankai</span>
         </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A passionate, bilingual Full-Stack Developer based in Montréal, QC, Canada.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+        <p data-i18n="header_desc">A passionate, bilingual Full-Stack Developer based in Montréal, QC, Canada.</p>
+        <a href="#contact" class="btn btn--pink" data-i18n="header_contact">Get in touch</a>
       </div>
     </div>
   </header>
@@ -60,18 +62,17 @@
 
     <section class="about" id="about">
       <div class="row">
-        <h2>About Me</h2>
+        <h2 data-i18n="about_title">About Me</h2>
         <div class="about__content">
           <div class="about__text">
             <!-- Replace the below paragraph with info about yourself -->
-            <p>
-            Full-stack developer driven by a passion for logical reasoning and problem-solving. <br>
-            Proficient in Java, JavaScript, TypeScript, PHP, C#, HTML, CSS, and experienced with libraries and frameworks such as Spring Boot, React.js, Node.js, Express, WPF, and ASP.NET Core. <br>
-            After starting my journey with self-learning and gaining initial work experience, I joined the Full-stack Development Program at John Abbott College in Montreal. <br>
-            Looking for a full-time position starting in April 2025.
+            <p data-i18n="about_text">
+              Full-stack developer with a strong foundation in mathematics and engineering, skilled in designing and building scalable web applications. <br> 
+              Proficient in Java, JavaScript, TypeScript, PHP, and C#, with hands-on experience in frameworks such as Spring Boot, React.js, Node.js, Express, WPF, and ASP.NET Core. <br> 
+              Adept at logical problem-solving and delivering efficient, maintainable code.
             </p>
             <!-- Provide a link to your resume -->
-            <a href="files/Resume Amine Mankai.pdf" class="btn">My Resume</a>
+            <a href="files/Resume Amine Mankai.pdf" class="btn" data-i18n="about_resume" id="resume-link">My Resume</a>
           </div>
 
           <div class="about__photo-container">
@@ -85,7 +86,7 @@
 
     <section class="work" id="projects">
       <div class="row">
-        <h2>Projects</h2>
+        <h2 data-i18n="projects_title">Projects</h2>
         <div class="work__boxes">
 
           <!-- Each div with the work__box class is a project. -->
@@ -93,7 +94,7 @@
           <div class="work__box">
             <div class="work__text">
               <h3>Twixer</h3>
-              <p>
+              <p data-i18n="twixer_desc">
                 Web app inspired by Twitter/X.<br/>
                 Features include user authentication, the ability to create, edit, and delete posts, as well as like, comment and repost others' posts. 
                 Users can also follow other users. 
@@ -110,7 +111,7 @@
               </ul>
 
               <div class="work__links">
-                <a href="https://twixer-client-production.up.railway.app/" target="_blank" class="link__text">
+                <a href="https://twixer-client-production.up.railway.app/" target="_blank" class="link__text" data-i18n="visit_website">
                   Visit Website <span></span>
                 </a>
                 <a href="https://github.com/mankai-amine/twixer-client" title="Twixer" target="_blank">
@@ -126,7 +127,7 @@
           <div class="work__box">
             <div class="work__text">
               <h3>Savorly</h3>
-              <p>
+              <p data-i18n="savorly_desc">
               A web app for food lovers. <br/>
               Users can browse, rate, print, share, and comment on recipes. <br/>
               They can save favorites and manage their own recipes. <br/>
@@ -145,7 +146,7 @@
               </ul>
 
               <div class="work__links">
-                <a href="https://savorly-frontend-production.up.railway.app/" class="link__text">
+                <a href="https://savorly-frontend-production.up.railway.app/" class="link__text" data-i18n="visit_website">
                   Visit Website <span></span>
                 </a>
                 <a href="https://github.com/mankai-amine/Savorly">
@@ -161,7 +162,7 @@
           <div class="work__box">
             <div class="work__text">
               <h3>NextStop</h3>
-              <p>
+              <p data-i18n="nextstop_desc">
               Web app for a Bus Ticketing System. <br/> 
               Users can search for trips, purchase tickets, and view their orders.<br/>
               Admins can manage the system by creating and modifying buses and trips.
@@ -178,7 +179,7 @@
               </ul>
 
               <div class="work__links">
-                <a href="https://nextstop-baatfxcxefcahqdh.eastus2-01.azurewebsites.net/" class="link__text">
+                <a href="https://nextstop-baatfxcxefcahqdh.eastus2-01.azurewebsites.net/" class="link__text" data-i18n="visit_website">
                   Visit Website <span></span>
                 </a>
                 <a href="https://github.com/mankai-amine/NextStop">
@@ -194,7 +195,7 @@
           <div class="work__box">
             <div class="work__text">
               <h3>ShopTillYouDrop</h3>
-              <p>
+              <p data-i18n="shoptill_desc">
               Web app for a marketplace. <br/> Buyers can browse products, complete purchases through a checkout process, and track their orders. <br/>
               Sellers can manage listings by creating, updating, or deleting products and monitor their sales performance.
               </p>
@@ -209,7 +210,7 @@
               </ul>
 
               <div class="work__links">
-                <a href="https://shoptillyoudrop-e858ff7b6c4f.herokuapp.com" class="link__text">
+                <a href="https://shoptillyoudrop-e858ff7b6c4f.herokuapp.com" class="link__text" data-i18n="visit_website">
                   Visit Website <span></span>
                 </a>
                 <a href="https://github.com/mankai-amine/marketplace">
@@ -233,13 +234,13 @@
 
     <section class="work" id="mini-projects">
       <div class="row">
-        <h2>Mini-projects</h2>
+        <h2 data-i18n="miniprojects_title">Mini-projects</h2>
         <div class="work__boxes">
           <!-- Each div with the work__box class is a project. -->
           <div class="work__box">
             <div class="work__text">
               <h3>Youtube Digest</h3>
-              <p>
+              <p data-i18n="youtube_desc">
               An AI-powered tool for summarizing and saving my favorite YouTube videos. <br/>
               It uses Python's YoutubeTranscriptApi library to fetch captions, and OpenAI's GPT to generate concise summaries of the text.
               </p>
@@ -266,7 +267,7 @@
           <div class="work__box">
             <div class="work__text">
               <h3>Book Finder</h3>
-              <p>
+              <p data-i18n="bookfinder_desc">
               The app uses Google Books API to enable users to search for books by title. <br/>
               It displays key information including the cover image, title, author(s), publisher, and a link to additional details.
               </p>
@@ -276,7 +277,7 @@
               </ul>
 
               <div class="work__links">
-                <a href="https://deluxe-licorice-129b3f.netlify.app/ " class="link__text">
+                <a href="https://deluxe-licorice-129b3f.netlify.app/ " class="link__text" data-i18n="visit_website">
                   Visit Website <span></span>
                 </a>
                 <a href="https://github.com/mankai-amine/book-finder">
@@ -292,7 +293,7 @@
           <div class="work__box">
             <div class="work__text">
               <h3>2048</h3>
-              <p>
+              <p data-i18n="game2048_desc">
               A sliding puzzle game where the objective is to combine numbered tiles to form a tile with the number 2048.
               </p>
               <ul class="work__list">
@@ -302,7 +303,7 @@
               </ul>
 
               <div class="work__links">
-                <a href="https://2048-game-tiles.netlify.app " class="link__text">
+                <a href="https://2048-game-tiles.netlify.app " class="link__text" data-i18n="visit_website">
                   Visit Website <span></span>
                 </a>
                 <a href="https://github.com/mankai-amine/2048">
@@ -324,14 +325,13 @@
 
   <section class="contact" id="contact">
     <div class="row">
-      <h2>Get in Touch</h2>
+      <h2 data-i18n="contact_title">Get in Touch</h2>
       <div class="contact__info">
-        <p>
+        <p data-i18n="contact_text">
           Looking for a skilled, bilingual full-stack developer? <br> Have questions, advice, or just want to say hello? <br>
           Feel free to reach out! The best way to get in touch is via email.
         </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:medaminemankai@gmail.com" class="btn">medaminemankai@gmail.com</a>
+        <a href="mailto:medaminemankai@gmail.com" class="btn" data-i18n="contact_btn">medaminemankai@gmail.com</a>
       </div>
     </div>
   </section>
